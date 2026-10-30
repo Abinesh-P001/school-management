@@ -1,0 +1,13 @@
+{
+  "name": "school-management-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "backend": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"cd backend; .\\venv\\Scripts\\python.exe -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload\"",
+    "start-all": "cmd /c start-all.bat"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0"
+  }
+}
